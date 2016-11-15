@@ -2,7 +2,7 @@
   "name": "overflow-marquee",
   "version": "0.1.0",
   "author": "Cezille07",
-  "description": "Angular directive to turn long strings to a marquee only if it overflows.",
+  "description": "Angular directive to turn long elements to a marquee only if it overflows.",
   "keywords": [
     "angular",
     "html",
@@ -34,5 +34,5 @@
     "url": "git://github.com/Cezille07/overflow-marquee.git"
   },
   "license": "MIT",
-  "bugs": "https://github.com/Cezile07/overflow-marquee/issues"
+  "bugs": "https://github.com/Cezille07/overflow-marquee/issues"
 }

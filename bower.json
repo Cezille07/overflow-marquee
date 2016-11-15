@@ -1,6 +1,6 @@
 {
   "name": "overflow-marquee",
-  "description": "Angular directive to turn long strings to a iOS-style marquee if it overflows.",
+  "description": "Angular directive to turn long elements to a marquee only if it overflows.",
   "main": ["build/overflow-marquee.min.js", "build/overflow-marquee.min.css"],
   "authors": [
     "Cezille07"
