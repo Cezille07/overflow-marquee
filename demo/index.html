@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="OverflowMarqueeDemo">
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+	<script src="src/overflow-marquee.js"></script>
+	<link rel="stylesheet" href="/src/overflow-marquee.css"></script>
+	
+	<script src="demo.js"></script>
+	<link rel="stylesheet" href="demo.css">
+</head>
+<body ng-controller="DemoController">
+	<div class="toolbar">
+		<span class="title">Overflow Marquee</span>
+	</div>
+	
+	<div id="content">
+		<p>The following divs are 350px wide, with some padding. 
+		
+		<div id="fit" class="container">
+			<div class="">I fit here.</div>
+		</div>
+		<div id="basic" class="container">
+			<div overflow-marquee>
+				 I don't fit here, but that's not a problem! I'll scroll left until my last breath *cough* character is seen.</div>
+		</div>
+		<div class="container">
+			<div overflow-marquee
+				 overflow-marquee-speed=5>
+				 I'm a faster! 5 speed! 5 speed 5 speed 5 speed woooooooo</div>
+		</div>
+		<div id="pause" class="container">
+			<div overflow-marquee
+				 overflow-marquee-pause="woo"
+				 ng-init="woo = 0"
+				 ng-click="woo = !woo">
+				 Click to toggle me! Click spam me! I don't really mind! My pause is mapped to a scope variable.</div>
+		</div>
+		<div id="expressionPause" class="container">
+			<div overflow-marquee
+				 overflow-marquee-pause="enteredNumber % 2 == 1">
+				 Enter an odd number into the text field to pause me! My pause is mapped to an expression!</div>
+				 
+			<input name="enteredNumber"
+				   ng-model="enteredNumber"
+				   type="number" />
+		</div>
+		
+		<div id="ngRepeatAndPause" class="container">
+			<div style="display: block"
+				 ng-init="childWoo = 0"
+				 ng-click="childWoo = !childWoo"
+				 ng-repeat="i in [0,1,2,3,4,5,6,7,8,9]">
+				<span overflow-marquee
+					  overflow-marquee-pause="childWoo">
+					  Index: {{i.toString().repeat(i + 1)}} - Go crazy with ng-repeat! We've got you covered. Say you have a playlist. Or something cool.</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
