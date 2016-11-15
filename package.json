@@ -1,6 +1,6 @@
 {
   "name": "overflow-marquee",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Cezille07",
   "description": "Angular directive to turn long elements to a marquee only if it overflows.",
   "keywords": [
