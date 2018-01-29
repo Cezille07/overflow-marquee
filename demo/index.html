@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html ng-app="OverflowMarqueeDemo">
 <head>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
-	<script src="src/overflow-marquee.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular.js"></script>
+	<script src="/src/overflow-marquee.js"></script>
 	<link rel="stylesheet" href="/src/overflow-marquee.css"></script>
 	
 	<script src="demo.js"></script>
@@ -50,7 +50,7 @@
 			<div style="display: block"
 				 ng-init="childWoo = 0"
 				 ng-click="childWoo = !childWoo"
-				 ng-repeat="i in [0,1,2,3,4,5,6,7,8,9]">
+				 ng-repeat="i in [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]">
 				<span overflow-marquee
 					  overflow-marquee-pause="childWoo">
 					  Index: {{i.toString().repeat(i + 1)}} - Go crazy with ng-repeat! We've got you covered. Say you have a playlist. Or something cool.</span>
