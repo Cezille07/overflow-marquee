@@ -6,8 +6,8 @@ Run `npm start` to see the demo.
 
 ## Dependencies
 
-* Angular 1.5
-* jQuery 2.2
+* Angular 1.6
+* jQuery 3.3
 
 ## Usage
 
